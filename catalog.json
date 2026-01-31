@@ -22,14 +22,11 @@
       "cast": ["Naomi Watts", "Jack Black", "Adrien Brody"],
       "director": "Peter Jackson",
       "country": "États-Unis",
-      "video": "https://drive.google.com/uc?export=download&id=16Qfych5cRK7N-wJbjyDlmi5v1swg43mH"
+      "video": "https://drive.google.com/uc?export=download&id=16Qfych5cRK7N-wJbjyDlmi5v1swg43mH",
       "images": {
         "poster": "assets/posters/kong_2005.jpg",
         "backdrop": "assets/backdrops/kong_2005.jpg"
       }
     }
   }
-
 }
-
-
