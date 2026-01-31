@@ -8,6 +8,10 @@ fetch("catalog.json")
   .catch(err => console.error("Erreur JSON :", err));
 
 
+// Variable globale pour stocker l'item ouvert
+let currentItem = null;
+
+
 // Génère toutes les sections (Ajout récent, Tendances, etc.)
 function generateSections(data) {
   const main = document.querySelector("main");
@@ -67,6 +71,8 @@ function enableModal(data) {
 
 // Ouvre la modale avec les infos du JSON
 function openModal(item) {
+  currentItem = item; // 🔥 essentiel pour Lecture
+
   document.getElementById("modal-title").textContent = item.title;
   document.getElementById("modal-meta").textContent =
     `${item.year} • ${item.type} • ${item.duration || item.seasons + " saisons"}`;
@@ -80,3 +86,18 @@ function openModal(item) {
 
   document.getElementById("modal").classList.remove("hidden");
 }
+
+
+// 🔥 LECTURE VIDÉO
+document.getElementById("modal-play").addEventListener("click", () => {
+  const player = document.getElementById("player");
+
+  if (!currentItem || !currentItem.video) {
+    console.error("Aucune vidéo trouvée pour cet item.");
+    return;
+  }
+
+  player.src = currentItem.video;
+  player.classList.remove("hidden");
+  player.play();
+});
