@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>NoctuaStream</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">NoctuaStream</div>
+    <nav class="nav-links">
+      <a href="#">Accueil</a>
+      <a href="#">Séries</a>
+      <a href="#">Films</a>
+      <a href="#">Nouveautés</a>
+      <a href="#">Ma liste</a>
+    </nav>
+    <div class="nav-right">
+      <input type="text" placeholder="Rechercher" class="search-input">
+      <div class="profile"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Bandeau principal -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">THE RIP</h1>
+        <p class="hero-meta">16+ • 1 saison • HD</p>
+        <p class="hero-desc">
+          Une série à suspense où rien n’est ce qu’il paraît. Plonge dans un univers sombre et captivant.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-play">Lecture</button>
+          <button class="btn btn-info">Plus d'infos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rangées de contenus -->
+    <section class="row">
+      <h2>Ajout récent</h2>
+      <div class="row-slider"></div>
+    </section>
+
+    <section class="row">
+      <h2>Séries populaires</h2>
+      <div class="row-slider"></div>
+    </section>
+  </main>
+
+  <!-- 🔥 MODALE NETFLIX ICI -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+
+      <div class="modal-header">
+        <img id="modal-backdrop" class="modal-backdrop">
+        <div class="modal-overlay"></div>
+        <h1 id="modal-title"></h1>
+        <p id="modal-meta"></p>
+      </div>
+
+      <div class="modal-body">
+        <p id="modal-description"></p>
+
+        <div class="modal-tags">
+          <span id="modal-age"></span>
+          <span id="modal-quality"></span>
+          <span id="modal-genres"></span>
+        </div>
+
+        <button class="modal-play">Lecture</button>
+      </div>
+    </div>
+  </div>
+  <!-- 🔥 FIN MODALE -->
+
+  <script src="script.js"></script>
+</body>
+</html>

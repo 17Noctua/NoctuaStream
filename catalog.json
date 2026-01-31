@@ -1,0 +1,31 @@
+{
+  "sections": [
+    {
+      "title": "Ajout récent",
+      "items": ["kong_2005"]
+    }
+  ],
+
+  "catalog": {
+    "kong_2005": {
+      "id": "kong_2005",
+      "title": "King Kong",
+      "type": "film",
+      "age": "12+",
+      "quality": ["HD"],
+      "genres": ["Action", "Aventure", "Fantastique"],
+      "tags": ["Épique", "Monstre", "Blockbuster"],
+      "year": 2005,
+      "duration": 187,
+      "description_short": "Un gorille géant légendaire capturé et emmené à New York.",
+      "description_long": "En 1933, une équipe de tournage découvre Skull Island, une île mystérieuse peuplée de créatures préhistoriques. Ils y rencontrent Kong, un gorille géant qui développe un lien inattendu avec l'actrice Ann Darrow. Leur retour à New York déclenche un chaos monumental.",
+      "cast": ["Naomi Watts", "Jack Black", "Adrien Brody"],
+      "director": "Peter Jackson",
+      "country": "États-Unis",
+      "images": {
+        "poster": "assets/posters/kong_2005.jpg",
+        "backdrop": "assets/backdrops/kong_2005.jpg"
+      }
+    }
+  }
+}
